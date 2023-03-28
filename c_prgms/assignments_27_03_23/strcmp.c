@@ -21,10 +21,10 @@ int main()
 	scanf("%[^\n]",d);
 	int a=mystrcmp(s,d);
 	if(a==1)
-		printf("string1 is bigger than second\n");
+		printf("string1 is bigger than second(1)\n");
 	if(a==-1)
-		printf("string2 is bigger than 1st\n");
+		printf("string2 is bigger than 1st(-1)\n");
 	if(a==0)
-		printf("Both are same");
+		printf("Both are same(0)");
 
 }

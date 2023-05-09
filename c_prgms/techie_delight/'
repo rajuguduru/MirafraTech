@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int main()
+{
+	int n,i,j,x,p1=0,p2=0;
+	printf("enter the no.of elements:\n");
+	scanf("%d",&n);
+	printf("enter the array elements:\n");
+	int arr[n];
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	printf("enter the target number(sum):\n");
+	scanf("%d",&x);
+	for(i=0;i<n;i++);
+	{
+		for(j=i+1;j<n;j++)
+		{
+			if((arr[i]+arr[j]==x))
+			{		
+				p1=arr[i];
+				p2=arr[j];
+			}
+		}	
+	}
+	printf("pair of %d and %d is %d",p1,p2,x);
+}

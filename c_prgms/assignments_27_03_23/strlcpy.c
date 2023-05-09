@@ -1,12 +1,13 @@
 #include<stdio.h>
-void strncopy(char *d,const char *s,int n)
+void strlcopy(char *d,const char *s,int n)
 {
 	int i=0;
-	while(i<n)
+	while(i<(n-1))
 	{
 	*d++=*s++;
 	i++;
 	}
+	*d=0;
 }
 int main()
 {
@@ -17,7 +18,7 @@ int main()
 	scanf("%[^\n]s",s);
 	printf("enter the no.of chrcts to copy:\n");
 	scanf("%d",&n);
-	strncopy(d,s,n);
+	strlcopy(d,s,n);
 	printf("destination string is :%s\n",d);
 }
 

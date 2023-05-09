@@ -13,9 +13,8 @@ int main()
 	char d[100];
 	printf("enter the source string:\n");
 	scanf("%[^\n]s",s);
-	getchar();
 	printf("enter the destination string:\n");
-  	scanf("%[^\n]s",d);
+  	scanf(" %[^\n]s",d);
 	mystrcat(d,s);
 	printf("%s",d);
 }

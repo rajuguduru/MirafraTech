@@ -15,7 +15,7 @@ int power(int a,int b)
 	}
 	return p;
 }
-int binaryToDecimal(int n)
+int binaryToDecimal(long long  n)
 {
 	int i=0,s=0,r=0;
 	while(n)
@@ -31,10 +31,10 @@ int binaryToDecimal(int n)
 }
 int main() 
 {
-	int  b;
+	long long  b;
 	printf("Enter a binary number: ");
-	scanf("%d", &b);
+	scanf("%lld", &b);
 	int d = binaryToDecimal(b);
-	printf("Decimal equivalent of %d is %d\n", b,d);
+	printf("Decimal equivalent of %lld is %d\n", b,d);
 	return 0;
 }

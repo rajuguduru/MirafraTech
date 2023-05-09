@@ -1,12 +1,13 @@
 #include<stdio.h>
-int myatoi(const char *string);
+#include<stdlib.h>
+//int myatoi(const char *string);
 int main()
 {
-	printf("\n%d\n", myatoi("421"));
+	printf("\n%d\n", atoi("abc122"));
 //	getch();
 	return(0);
 }
-int myatoi(const char *string)
+/*int myatoi(const char *string)
 {
 	int i;
 	i=0;
@@ -17,4 +18,4 @@ int myatoi(const char *string)
 		string++;
 	}
 	return(i);
-} 
+} */

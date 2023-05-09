@@ -1,16 +1,17 @@
 #include<stdio.h>
-void mystrncat(char *d,const char *s,int n)
+void mystrlcat(char *d,const char *s,int n)
 {
 	int i=0;
 	while(*d)
 	{
 		d++;
 	}
-	while(i<n)
+	while(i<(n-1))
 	{	
 		*d++=*s++;
 		i++;
 	}
+	*d=0;
 }
 int main()
 {
@@ -23,7 +24,7 @@ int main()
   	scanf(" %[^\n]s",d);
 	printf("enter the no.of charcters to cncat:\n");
 	scanf("%d",&n);
-	mystrncat(d,s,n);
+	mystrlcat(d,s,n);
 	printf("%s",d);
 }
 

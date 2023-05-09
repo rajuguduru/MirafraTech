@@ -8,7 +8,7 @@ int y;
 int main()
 {
 you.x=20;
-printf("x=%d,y=%d",you.x,you.y);
+printf("x=%d\n,y=%d\n",you.x,you.y);
 you.y=30;
-printf("x=%d,y=%d",you.x,you.y);
+printf("====>\nx=%d\n,y=%d\n",you.x,you.y);
 }

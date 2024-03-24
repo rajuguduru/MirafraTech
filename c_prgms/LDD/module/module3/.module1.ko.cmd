@@ -1,0 +1,1 @@
+cmd_/home/km/MirafraTech/c_prgms/LDD/module/module3/module1.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -z noexecstack   --build-id  -T ./scripts/module-common.lds -o /home/km/MirafraTech/c_prgms/LDD/module/module3/module1.ko /home/km/MirafraTech/c_prgms/LDD/module/module3/module1.o /home/km/MirafraTech/c_prgms/LDD/module/module3/module1.mod.o;  true

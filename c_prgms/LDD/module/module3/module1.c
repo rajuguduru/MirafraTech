@@ -4,8 +4,10 @@
 
 static int driver_start(void)
 {
-    printk( "Driver has started by Raju\n");
-    return 0;
+	float a=20.567;
+    	printk( "Driver has started by Raju\n");
+    	printk( "float value is =%d\n",a);
+    	return 0;
 }
 
 static void driver_exit(void)

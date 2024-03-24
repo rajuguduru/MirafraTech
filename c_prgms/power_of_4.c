@@ -3,7 +3,7 @@
 int powerof(int n)
 {
 	int i,count=0;
-	if((n!=4)&&((n&n-1)==0))
+	if((n&(n-1))==0)
 	{
 		while(n)
 		{
@@ -16,7 +16,7 @@ int powerof(int n)
 				return count;
 		}
 	}
-	else
+		
 		return 1;
 }
 int main()
@@ -25,7 +25,7 @@ int main()
 	printf("enter the value;\n");
 	scanf("%d",&n);
 	int a=powerof(n);
-	if((a%2)==0)
+	if((a%2==0)
 	{
 		printf("It is power of four\n");
 	}
